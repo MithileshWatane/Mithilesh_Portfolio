@@ -1,13 +1,61 @@
+/* styles.css */
+.header1{
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+  padding: 120px 0;
+  animation: fadeIn 1.5s ease-in-out;
+  background: rgb(253,244,244);
+  background: linear-gradient(339deg, rgba(253,244,244,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 69%, rgba(167,39,39,1) 82%);
+  z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.about-card {
+  background-color: #000000;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Inner padding */
+  margin: 20px auto; /* Centering the card */
+  text-align: left; /* Aligning text to the left */
+}
+.about-card:hover{
+border-color: #ff004f;
+}
+.about-card h2 {
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.about-card p {
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+.about-card input{
+  width: 17%;
+  height: 5px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #e6dfdf;
+  background-color: #faf5f5;
+  color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+.about{
+  height: fit-content;
+}
+
+
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #0d0a0a;
+    background-color: #000000;
     color: #fff;
     scroll-behavior: smooth;
   }
   
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   
@@ -15,9 +63,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
+    height: 50px;
+    font-size: large;
     top: 0;
     left: 0;
     background: rgba(28, 25, 25, 0.9);
@@ -45,14 +95,13 @@ body {
   }
   
   .navbar a.subscribe:hover {
-    background-color: #ff336f;
+    background-color: #e5dadd;
   }
   
   
   .header {
     text-align: center;
-    padding: 120px 0 100px;
-    animation: fadeIn 1.5s ease-in-out;
+        animation: fadeIn 1.5s ease-in-out;
     
   }
   
@@ -86,17 +135,14 @@ body {
   .header button {
     padding: 10px 20px;
     border: none;
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: #ff004f;
-    color: #fff;
+    color: #fef9f9;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-  .header button:hover {
-    background-color: #ff336f;
-  }
-  
+
   .about,
   .services,
   .contact {
@@ -173,8 +219,6 @@ body {
 
 .skill-card {
   background-color: #171515;
-  
-
   padding: 30px;
   border-radius: 10px;
   width: 140px;
@@ -206,6 +250,10 @@ body {
 }
 
 /* Projects Section */
+.projects{
+  padding-top: 50px;
+
+}
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -270,7 +318,7 @@ body {
   .contact {
     text-align: center;
     padding: 100px 20px;
-    background-color: #100e0ec1;
+    background-color: #000000c1;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
    
@@ -279,7 +327,6 @@ body {
   .contact h2 {
     font-size: 40px;
     margin-bottom: 30px;
-    color: #ff004f;
   }
   
   .contact p {
@@ -315,8 +362,8 @@ body {
     transition: border-color 0.3s ease;
   }
   
-  .contact-form input:focus,
-  .contact-form textarea:focus {
+  .contact-form input:hover,
+  .contact-form textarea:hover {
     border-color: #ff004f;
   }
   
